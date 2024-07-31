@@ -1,2 +1,2 @@
-# SaharaTest
-Written test for Sahara Digital - Employee CRUD app
+SDD Test
+Written test for SDD - Employee CRUD app

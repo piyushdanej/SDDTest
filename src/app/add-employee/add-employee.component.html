@@ -1,0 +1,51 @@
+
+<div class="control">
+    <label for="name-input">Name <span class="text-danger">*</span></label>
+    <div class="input-group input-group-lg mt-2 mb-2">
+        <input type="text" class="form-control" 
+            id="name-input"
+            aria-label="name" 
+            [(ngModel)]="name">
+    </div>
+</div>
+
+<div class="control mt-4">
+    <label for="email-input">Email <span class="text-danger">*</span></label>
+    <div class="input-group input-group-lg mt-2 mb-2">
+        <input type="text" class="form-control" 
+            id="email-input"
+            aria-label="email" 
+            [(ngModel)]="email">
+    </div>
+</div>
+
+<div class="control mt-4">
+    <label for="phone-input">Phone <span class="text-danger">*</span></label>
+    <div class="input-group input-group-lg mt-2 mb-2">
+        <input type="text" class="form-control" 
+            id="phone-input"
+            aria-label="phone" 
+            [(ngModel)]="phone">
+    </div>
+</div>
+
+<div class="control mt-4">
+    <label for="address-input">Address <span class="text-danger">*</span></label>
+    <div class="input-group input-group-lg mt-2 mb-2">
+        <input type="text" class="form-control" 
+            id="address-input"
+            aria-label="address"
+            [(ngModel)]="address">
+    </div>
+</div>
+
+
+<div class="footer bg-light py-2">
+    <button class="btn btn-danger mr-4 btn-lg"
+        (click)="closeModal.emit()">Cancel</button>
+    <button class="btn btn-success mr-2 btn-lg"
+        (click)="addEmployee()"
+        [disabled]="!name || !email || !phone || !address">
+            {{actionButtonLabel}}
+    </button>
+</div>

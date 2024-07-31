@@ -1,0 +1,182 @@
+<div class="employee-list-container py-4 px-4">
+    <div class="header bg-dark">
+        <div class="title h5 py-4 text-white px-4">
+            Manage Employees
+        </div>
+        <div class="button-group px-4">
+            <!-- <button *ngIf="isDeleteAllowed"
+                class="btn btn-danger mr-2">Delete</button> -->
+
+            <button class="btn btn-success" data-toggle="modal" data-target="#modal-for-addEmployee">
+                Add New Employee
+            </button>
+        </div>
+    </div>
+
+    <!-- <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let employee of employeeListToShow">
+                    <td>
+                        <input type="checkbox">
+                    </td>
+
+                    <td>{{employee.name}}</td>
+                    <td>{{employee.email}}</td>
+                    <td>{{employee.address}}</td>
+                    <td>{{employee.phone}}</td>
+                    <td>
+                        <button class="btn" >
+                            <span class="material-icons-round text-warning">edit</span>
+                        </button>
+                        <button 
+                            *ngIf="isDeleteAllowed"
+                            class="btn" 
+                            data-toggle="modal" 
+                            data-target="#modal-for-deleteEmployee"
+                            (click)="onDeleteClicked(employee)">
+                            <span class="material-icons-round text-danger">delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div> -->
+    <div class="table-container">
+        <div class="mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource">
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="id">
+                    <th mat-header-cell *matHeaderCellDef> Id </th>
+                    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="email">
+                    <th mat-header-cell *matHeaderCellDef> Email </th>
+                    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="phone">
+                    <th mat-header-cell *matHeaderCellDef> Phone </th>
+                    <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="address">
+                    <th mat-header-cell *matHeaderCellDef> Address </th>
+                    <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="actions">
+                    <th mat-header-cell *matHeaderCellDef> Actions </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button class="btn"
+                            data-toggle="modal" 
+                            data-target="#modal-for-addEmployee"
+                            (mouseover)="onUpdateClicked(element)">
+                                <span class="material-icons-round text-warning">edit</span>
+                        </button>
+                        <button 
+                            *ngIf="isDeleteAllowed"
+                            class="btn" 
+                            data-toggle="modal" 
+                            data-target="#modal-for-deleteEmployee"
+                            (click)="onDeleteClicked(element)">
+                            <span class="material-icons-round text-danger">delete</span>
+                        </button>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="columnNames"></tr>
+                <tr mat-row *matRowDef="let row; columns: columnNames;"></tr>
+            </table>
+
+            <mat-paginator [pageSize]="5"
+                            [length]="employeeList?.length"
+                            showFirstLastButtons
+                            aria-label="Select page of periodic elements">
+            </mat-paginator>
+            </div>
+    </div>
+</div>
+
+
+<div class="modal-for-addEmployee-container">
+    <div class="modal fade" id="modal-for-addEmployee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header my-2">
+                    <span class="h4 text-secondary">{{empToUpdate ? 'Update Employee' : 'Add Employee'}}</span>
+                    <button #closeButton type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <app-add-employee
+                        [updateEmployee]="empToUpdate"
+                        (employeeUpdated)="updateEmployee($event)"
+                        (employeeAdded)="addEmployee($event)"
+                        (closeModal)="closeModal()">
+                    </app-add-employee>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-for-deleteEmployee-container">
+    <div class="modal fade" id="modal-for-deleteEmployee"
+        tabindex="-1" 
+        role="dialog" 
+        aria-labelledby="exampleModalLongTitle" 
+        aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header my-2">
+                    <span class="h4 text-secondary">Delete Employee</span>
+                    <button #closeButton type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span class="text-secondary">
+                        Are you sure you want to delete this employee ?
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <div class="footer bg-light py-4">
+                        <button class="btn btn-dark mr-4 btn-lg"
+                            data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-danger mr-2 btn-lg"
+                            data-dismiss="modal"
+                            (click)="deleteEmployee()">
+                                Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

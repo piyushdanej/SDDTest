@@ -1,0 +1,48 @@
+.page-view {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    height: 70%;
+    width: 30%;
+    border : 1px solid #DDDCDC;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+    box-shadow: 6px 6px 10px 0px rgba(222,215,215,1);;
+
+}
+
+.header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    border-radius : 20px;
+    background-color: #DDDCDC;
+
+}
+
+::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in-button {
+    border-radius: 20px;
+}

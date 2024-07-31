@@ -1,0 +1,46 @@
+<div class="page-view">
+        <div class="login-box">
+            <div class="header bg-success">
+                <span class="h3 text-white">Sign In</span>
+            </div>
+            <div class="body my-4 mx-4">
+
+                <div class="input-group input-group-lg mt-4 mb-4">
+                    <input type="text" 
+                        class="form-control" 
+                        aria-label="Username" 
+                        placeholder="Username"
+                        [(ngModel)]="username">
+                </div>
+
+                <div class="input-group input-group-lg mt-4 mb-4">
+                    <input type="password" class="form-control" 
+                        aria-label="password" 
+                        placeholder="Password"
+                        [(ngModel)]="pass">
+                </div>
+
+
+
+                <div class="forgot-password mt-4">
+                    <div class="error-message text-danger">
+                        <span *ngIf="showError"> Wrong Credentials </span>
+                    </div>
+                    <div>
+                        <span>Forgot </span>
+                        <span class="text-success">Username / Password ?</span>
+                    </div>
+                </div>
+
+                
+
+                <button type="button" 
+                    class="bg-success text-white btn-lg btn-block mt-4 sign-in-button"
+                    (click)="authenticateUser()">
+                        SIGN IN
+                </button>
+
+            </div>
+        </div>
+
+</div>

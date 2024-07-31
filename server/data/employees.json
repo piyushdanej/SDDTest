@@ -1,0 +1,186 @@
+{
+    "employees" : [
+  {
+    "name": "Jenna Mccormick",
+    "id": 0,
+    "email": "jennamccormick@diginetic.com",
+    "phone": "+1 (989) 481-3222",
+    "address": "163 Dooley Street, Jessie, New Jersey, 2570"
+  },
+  {
+    "name": "Sadie Marks",
+    "id": 1,
+    "email": "sadiemarks@diginetic.com",
+    "phone": "+1 (943) 495-2482",
+    "address": "260 Hanover Place, Kerby, Nevada, 6147"
+  },
+  {
+    "name": "Martina Rios",
+    "id": 2,
+    "email": "martinarios@diginetic.com",
+    "phone": "+1 (969) 409-3886",
+    "address": "747 Coleridge Street, Shasta, Nebraska, 8757"
+  },
+  {
+    "name": "England Cline",
+    "id": 3,
+    "email": "englandcline@diginetic.com",
+    "phone": "+1 (987) 545-3851",
+    "address": "993 Eaton Court, Jamestown, New York, 3490"
+  },
+  {
+    "name": "Augusta Sloan",
+    "id": 4,
+    "email": "augustasloan@diginetic.com",
+    "phone": "+1 (987) 445-3783",
+    "address": "468 Irvington Place, Rockingham, Palau, 2900"
+  },
+  {
+    "name": "Savage Mcgowan",
+    "id": 5,
+    "email": "savagemcgowan@diginetic.com",
+    "phone": "+1 (820) 482-2959",
+    "address": "295 Columbus Place, Abiquiu, Kansas, 3501"
+  },
+  {
+    "name": "Essie Winters",
+    "id": 6,
+    "email": "essiewinters@diginetic.com",
+    "phone": "+1 (819) 539-3302",
+    "address": "594 Diamond Street, Noblestown, North Carolina, 5448"
+  },
+  {
+    "name": "Strong Gibbs",
+    "id": 7,
+    "email": "stronggibbs@diginetic.com",
+    "phone": "+1 (984) 500-2952",
+    "address": "812 Agate Court, Nash, Hawaii, 3927"
+  },
+  {
+    "name": "Mae Ayers",
+    "id": 8,
+    "email": "maeayers@diginetic.com",
+    "phone": "+1 (961) 464-2796",
+    "address": "600 Glenwood Road, Beaverdale, Pennsylvania, 9888"
+  },
+  {
+    "name": "Cruz Sims",
+    "id": 9,
+    "email": "cruzsims@diginetic.com",
+    "phone": "+1 (835) 463-3162",
+    "address": "122 Hoyts Lane, Frizzleburg, District Of Columbia, 8858"
+  },
+  {
+    "name": "Sloan Conrad",
+    "id": 10,
+    "email": "sloanconrad@diginetic.com",
+    "phone": "+1 (828) 545-2040",
+    "address": "479 Village Road, Lewis, Wyoming, 735"
+  },
+  {
+    "name": "Dianna Howe",
+    "id": 11,
+    "email": "diannahowe@diginetic.com",
+    "phone": "+1 (917) 498-2705",
+    "address": "496 Thatford Avenue, Bodega, Colorado, 4099"
+  },
+  {
+    "name": "Carmen Holman",
+    "id": 12,
+    "email": "carmenholman@diginetic.com",
+    "phone": "+1 (848) 548-2664",
+    "address": "905 Harden Street, Eagletown, Montana, 1174"
+  },
+  {
+    "name": "York Harper",
+    "id": 13,
+    "email": "yorkharper@diginetic.com",
+    "phone": "+1 (968) 566-3917",
+    "address": "884 Albany Avenue, Wiscon, Minnesota, 391"
+  },
+  {
+    "name": "Beach Herring",
+    "id": 14,
+    "email": "beachherring@diginetic.com",
+    "phone": "+1 (911) 458-3799",
+    "address": "481 Carroll Street, Sylvanite, Virgin Islands, 1223"
+  },
+  {
+    "name": "Bean Hinton",
+    "id": 15,
+    "email": "beanhinton@diginetic.com",
+    "phone": "+1 (923) 432-2858",
+    "address": "488 Cook Street, Dahlen, Northern Mariana Islands, 6662"
+  },
+  {
+    "name": "Buchanan Olsen",
+    "id": 16,
+    "email": "buchananolsen@diginetic.com",
+    "phone": "+1 (819) 439-3286",
+    "address": "751 Caton Place, Delwood, California, 282"
+  },
+  {
+    "name": "Luann Spencer",
+    "id": 17,
+    "email": "luannspencer@diginetic.com",
+    "phone": "+1 (821) 544-2866",
+    "address": "799 Flatlands Avenue, Ona, Missouri, 831"
+  },
+  {
+    "name": "Mabel Pittman",
+    "id": 18,
+    "email": "mabelpittman@diginetic.com",
+    "phone": "+1 (907) 421-2225",
+    "address": "481 Indiana Place, Bethpage, Delaware, 5709"
+  },
+  {
+    "name": "Viola Nelson",
+    "id": 19,
+    "email": "violanelson@diginetic.com",
+    "phone": "+1 (925) 428-3580",
+    "address": "187 Fleet Walk, Leola, Alaska, 3408"
+  },
+  {
+    "name": "Cohen Herrera",
+    "id": 20,
+    "email": "cohenherrera@diginetic.com",
+    "phone": "+1 (996) 429-2959",
+    "address": "314 Crawford Avenue, Trail, Guam, 1522"
+  },
+  {
+    "name": "Fanny Delacruz",
+    "id": 21,
+    "email": "fannydelacruz@diginetic.com",
+    "phone": "+1 (916) 533-3616",
+    "address": "171 Vandervoort Place, Masthope, New Hampshire, 1271"
+  },
+  {
+    "name": "Fay Glass",
+    "id": 22,
+    "email": "fayglass@diginetic.com",
+    "phone": "+1 (889) 600-2934",
+    "address": "677 Adler Place, Avalon, Florida, 5309"
+  },
+  {
+    "name": "Pratt Phelps",
+    "id": 23,
+    "email": "prattphelps@diginetic.com",
+    "phone": "+1 (932) 470-2955",
+    "address": "111 Degraw Street, Kingstowne, Louisiana, 1584"
+  },
+  {
+    "name": "Mercado Ellis",
+    "id": 24,
+    "email": "mercadoellis@diginetic.com",
+    "phone": "+1 (943) 508-3679",
+    "address": "533 Bliss Terrace, Homestead, Mississippi, 5953"
+  },
+  {
+    "name": "Phyllis Stafford",
+    "id": 25,
+    "email": "phyllisstafford@diginetic.com",
+    "phone": "+1 (945) 567-2894",
+    "address": "166 Elizabeth Place, Oneida, Indiana, 4569"
+  }
+]
+}

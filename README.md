@@ -1,4 +1,4 @@
-App for Sahara Digital CRUD Test
+App for Sharjah Digital Department (SDD) CRUD Test
 
 Login Using credentials : 
 username : admin1

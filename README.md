@@ -19,3 +19,7 @@ Evaluation points :
 7. UI | DONE
 8. Responsive UI | Not done (No UI Provided)
 9. Git | DONE
+
+Steps to Run app : 
+1. Run command : "npm run mock:server"
+2. Run command : "npm run start"

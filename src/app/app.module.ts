@@ -16,6 +16,7 @@ import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatCardModule } from "@angular/material/card";
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { PerformanceChartComponent } from './performance-chart/performance-chart.component';
+import { ExpensesComponent } from './expenses/expenses.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { PerformanceChartComponent } from './performance-chart/performance-chart
     EmployeeListComponent,
     AddEmployeeComponent,
     EmployeeDetailsComponent,
-    PerformanceChartComponent
+    PerformanceChartComponent,
+    ExpensesComponent
   ],
   imports: [
     BrowserModule,

@@ -34,8 +34,7 @@ export class EmployeeService {
     return this.http.post(this.url+ '/deleteEmployee' , employee);
   }
 
-  getEmployeeDetails(employeeId : number) : Observable<Employee> {
+  getEmployeeDetails(employeeId: number) : Observable<Employee> {
     return this.http.get<Employee>(this.url + `/getEmployeeDetails/${employeeId}`);
   }
-
 }

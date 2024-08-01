@@ -40,11 +40,6 @@ export class PerformanceChartComponent implements OnInit, AfterViewInit{
       },
       options: {
         aspectRatio: 2,
-        bar : {
-          datasets :  {
-            barThickness : 5
-          }
-        }
       }
     })
   }

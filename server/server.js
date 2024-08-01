@@ -57,14 +57,11 @@ server.post('/updateEmployee' , (req , res) => {
 })
 
 server.get('/getEmployeeDetails/:id' , (req , res) => {
+    console.log("get EMployee with id called")
     const urlValues= req.url.split('/');
     const id = urlValues[urlValues.length -1];
 
     const employeeFound = employees.find(emp => emp.id == id)
-
-    console.log("id to get : " , id);
-    console.log("employee found" , employeeFound);
-
     res.send(employeeFound);
 })
 

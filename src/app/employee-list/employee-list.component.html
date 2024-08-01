@@ -104,7 +104,10 @@
                 </ng-container>
 
                 <tr mat-header-row *matHeaderRowDef="columnNames"></tr>
-                <tr mat-row *matRowDef="let row; columns: columnNames;"></tr>
+                <tr mat-row *matRowDef="let row; columns: columnNames;"
+                    class="hover-highlight"
+                    (click)="onRowClick(row)">
+                </tr>
             </table>
 
             <mat-paginator [pageSize]="5"

@@ -6,6 +6,7 @@ import { filter, tap } from 'rxjs';
 import { AuthenticateService } from 'src/services/authenticate.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-list',
@@ -28,8 +29,8 @@ export class EmployeeListComponent implements OnInit{
 
   constructor(private snackBar: MatSnackBar, 
     private employeeService : EmployeeService,
-    private authService : AuthenticateService
-  ) {}
+    private authService : AuthenticateService,
+    private router : Router) {}
 
   ngOnInit(): void {
     this.getEmployeeList();
@@ -129,5 +130,10 @@ export class EmployeeListComponent implements OnInit{
     let endIndex = pageNum * this.pageSize;
 
     this.employeeListToShow = this.employeeList.slice(startIndex , endIndex);
+  }
+
+  onRowClick(row : Employee) {
+    console.log("row : " , row);
+    this.router.navigate([`/employeeDetails/${row.id}`]);
   }
 }

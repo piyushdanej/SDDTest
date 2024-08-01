@@ -4,8 +4,8 @@
     align-items: center;
 }
 
-/* .my-snackbar {
-    position: fixed;
-    bottom : -20px;
-    left: 0px;
-}vkk */
+.hover-highlight:hover {
+    background-color: #DDDCDC;
+    cursor: pointer;
+    /* color: white; */
+}

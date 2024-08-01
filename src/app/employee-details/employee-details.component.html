@@ -1,0 +1,120 @@
+<div class="details-container py-2 px-2">
+    <div class="header my-4">
+        <div class="heading">
+            <p class="h4">Good afternoon, {{employee?.name}} !</p>
+            <p class="sub-text">Your performance is looking good!</p>
+        </div>
+        <div class="time-widget">
+            <mat-card class=" single-card time-card" appearance="outlined" >
+                <mat-card-content>
+                    <div class="content-flex">
+                        <div class="content-left">
+                            <p class="card-title">Current Time</p>
+                            <p class="card-main-text my-2">{{currentTime | date : 'medium'}}</p>
+                        </div>
+                        <div class="content-right">
+                            <span class="material-icons-round text-secondary">schedule</span>
+                        </div>
+                    </div>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+    </div>
+
+
+    <div class="widget-row">
+        <mat-card class="single-card" appearance="outlined">
+            <mat-card-content>
+                <div class="content-flex">
+                    <div class="content-left">
+                        <p class="card-title">My Performance</p>
+                        <p class="card-main-text h4 my-2">202</p>
+                        <div class="marker border-green-col px-2">
+                            Good
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <span class="material-icons-round text-info">schedule</span>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="single-card" appearance="outlined">
+            <mat-card-content>
+                <div class="content-flex">
+                    <div class="content-left">
+                        <p class="card-title">Task Assigned</p>
+                        <p class="card-main-text h4 my-2">189</p>
+                        <div class="marker border-gray-col px-2">
+                            200 Avg Task per User
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <span class="material-icons-round text-info ">task</span>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="single-card" appearance="outlined">
+            <mat-card-content>
+                <div class="content-flex">
+                    <div class="content-left">
+                        <p class="card-title">Task Completion</p>
+                        <p class="card-main-text h4 my-2">98.56%</p>
+                        <div class="marker border-green-col px-2">
+                            Good Score
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <span class="material-icons-round text-info ">task</span>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="single-card" appearance="outlined">
+            <mat-card-content>
+                <div class="content-flex">
+                    <div class="content-left">
+                        <p class="card-title">Attendance</p>
+                        <p class="card-main-text h4 my-2">89.97%</p>
+                        <div class="marker border-orange-col px-2">
+                            Average Score
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <span class="material-icons-round text-info ">logout</span>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="single-card" appearance="outlined">
+            <mat-card-content>
+                <div class="content-flex">
+                    <div class="content-left">
+                        <p class="card-title">Leaves %</p>
+                        <p class="card-main-text h4 my-2">100%</p>
+                        <div class="marker border-green-col px-2">
+                            Perfect Score
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <span class="material-icons-round text-info ">logout</span>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>       
+    </div>
+    <div class="analytics-row">
+        <div class="team-details"></div>
+        <div class="performance">
+            <div class="performance-comparision">
+                <app-performance-chart></app-performance-chart>
+            </div>           
+        </div>
+    </div>
+</div>

@@ -56,6 +56,18 @@ server.post('/updateEmployee' , (req , res) => {
     res.send(true);
 })
 
+server.get('/getEmployeeDetails/:id' , (req , res) => {
+    const urlValues= req.url.split('/');
+    const id = urlValues[urlValues.length -1];
+
+    const employeeFound = employees.find(emp => emp.id == id)
+
+    console.log("id to get : " , id);
+    console.log("employee found" , employeeFound);
+
+    res.send(employeeFound);
+})
+
 server.listen(3000 , () => {
     console.log("Listening now");
 })

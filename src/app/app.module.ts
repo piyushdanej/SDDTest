@@ -12,12 +12,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from "@angular/material/paginator";
+
+import { MatCardModule } from "@angular/material/card";
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { PerformanceChartComponent } from './performance-chart/performance-chart.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EmployeeListComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    EmployeeDetailsComponent,
+    PerformanceChartComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +34,7 @@ import { MatPaginatorModule } from "@angular/material/paginator";
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
+    MatCardModule
   ],
   providers: [MatSnackBarModule],
   bootstrap: [AppComponent]

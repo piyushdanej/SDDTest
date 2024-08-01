@@ -13,12 +13,12 @@ const routes: Routes = [
   {
     path : 'employees',
     component : EmployeeListComponent,
-    // canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path : 'employeeDetails/:id',
     component : EmployeeDetailsComponent,
-    // canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path : '',

@@ -29,6 +29,9 @@ export class AddEmployeeComponent implements OnInit, OnChanges {
       this.phone = this.updateEmployee.phone;
       this.address = this.updateEmployee.address;
       this.actionButtonLabel = "Update";
+    }else {
+      this.clearValues();
+      this.address =  "Add";
     }
   }
 
